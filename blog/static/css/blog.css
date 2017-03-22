@@ -1,18 +1,52 @@
 body {
     padding-left: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Ubuntu' !important;
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+    color: #4f4f4f !important;
 }
 h1 a {
-    color: #FCA205;
-    font-family: 'Lobster';
+    /*color: #FCA205;*/
+    font-family: 'Sentinel SSm A', 'Sentinel SSm b', serif;
+    letter-spacing: 0.7px;
+    font-size: 40px !important;
+    line-height: 1.4 !important;
+    font-weight: 300 !important;
 }
 .page-header {
-    background-color: #ff9400;
+    /*background-color: #3b444f;*/
     margin-top: 0;
     padding: 20px 20px 20px 40px;
+    -webkit-animation-name: backgroundColor; /*Safari*/
+    -webkit-Animation-duration: 12s; /*Safari*/
+    -webkit-animation-iteration-count: infinite; /*Safari*/
+    animation-name: backgroundColor;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
 }
 
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes backgroundColor {
+    0%   {background-color: #182734;}
+    25%  {background-color: #4e606e;}
+    50%  {background-color: #919ca5;}
+    75%  {background-color: #4e606e;}
+    100% {background-color: #182734;}
+}
+
+/* Standard syntax */
+@keyframes backgroundColor {
+    0%   {background-color: #182734;}
+    25%  {background-color: #4e606e;}
+    50%  {background-color: #919ca5;}
+    75%  {background-color: #4e606e;}
+    100% {background-color: #182734;}
+}   
+
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
+    color: #fcf8e3;
     font-size: 36pt;
     text-decoration: none;
 }
@@ -22,7 +56,7 @@ h1 a {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Ubuntu', cursive;
 }
 
 .date {
@@ -49,5 +83,7 @@ h1, h2, h3, h4 {
 }
 
 .post h1 a, .post h1 a:visited {
-    color: #000000;
+    color: #35465c;
+    letter-spacing: 0.7px;
+    font-size: 28px !important;
 }
